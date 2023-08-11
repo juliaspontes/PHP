@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+      
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand"></a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="navbar navbar-dark bg-dark""><a>Configurações</a></button>
+          <br>
+          <button class="navbar navbar-dark bg-dark""><a>Perfil</a></button>
+        </form>
+      </nav>
+            
+      <br>
+
+      <div class="container">
+      <h1>Novo Usuário</h1>
+      <form>
+        
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Nome</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Informe o Nome...">
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">CPF</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Informe o CPF...">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCEP">Endereço</label>
+              <input type="text" class="form-control" id="inputCEP" placeholder="Informe o Endereço...">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputEstado">Nível</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>...</option>
+                </select>
+            </div>
+        </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">E-mail</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="Informe o E-mail...">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputCEP">Senha</label>
+                  <input type="text" class="form-control" id="inputCEP" placeholder="Informe a Senha...">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputEstado">Status</label>
+                    <select id="inputEstado" class="form-control">
+                      <option selected>Escolher...</option>
+                      <option>...</option>
+                    </select>
+                </div>
+            </div>
+                
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="submit" class="btn">Cancelar</button>
+      </form>
+    </div>
+</body>
+</html>
