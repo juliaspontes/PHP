@@ -7,22 +7,30 @@
 
   </head>
   <body>
-    <form action="Resposta1.php" method="POST">
+    <form action="Resposta3.php" method="POST">
     <br>
-      <div class=container>
+      <div class=container>  
         <div class="row">
             <div class="col">
                 <label for="valor">Informe um valor</label>
-                <input type="number" name="valor" id="valor" class="form-control" placeholder="Informe o valor">
+                <input type="number" name="valor1" id="valor1" class="form-control" placeholder="Informe o valor">
             </div>
         </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="valor">Informe outro valor</label>
+                <input type="number" name="valor2" id="valor2" class="form-control" placeholder="Informe outro valor">
+            </div>
+        </div>
+        </div>
+
         <br>
         <div class="row">
             <div  class="col"> 
                 <button type="submit" class="btn btn-sucess">Enviar</button>
             </div>
         </div>
-      </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
