@@ -13,7 +13,7 @@
                 $soma = $valor1 + $valor2;
 
                 if ($valor1 == $valor2) {
-                    $triploDaSoma = 3 * $soma;
+                    $triploDaSoma = $valor1 + $soma;
                     echo "Os valores são iguais. O triplo da soma é: $triploDaSoma";
                 } else 
                     echo "A soma dos valores é: $soma";

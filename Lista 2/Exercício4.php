@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col">
                 <label for="valor">Informe um número que deseja saber a tabuada</label>
-                <input type="number" name="valor1" id="valor1" class="form-control">
+                <input type="number" name="valor" id="valor" class="form-control">
             </div>
         </div>
 
@@ -21,7 +21,7 @@
 
         <div class="row">
             <div  class="col"> 
-                <button type="submit" class="btn btn-sucess">Enviar</button>
+                <button type="submit" class="btn btn-danger">Enviar</button>
             </div>
         </div>
     </form>

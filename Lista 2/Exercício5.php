@@ -7,35 +7,24 @@
 
   </head>
   <body>
-        <?php
-            $vetor = [
-                "valor1" => 1,
-                "valor2" => 2,
-                "valor3" => 3,
-                4 => 4
-            ];
+    <form action="Resposta5.php" method="POST">
+    <br>
+      <div class=container>  
+        <div class="row">
+            <div class="col">
+                <label for="valor">Informe um número que deseja saber o fatorial</label>
+                <input type="number" name="valor" id="valor" class="form-control">
+            </div>
+        </div>
 
-            var_dump($vetor);
-            echo "<br>";
-            echo "O valor da posição [valor1] é {$vetor["valor1"]}";
-            echo "<br>";
-            $vetor["valor2"] = 25;
-            echo "O valor da posição [valor2] agora é ".$vetor["valor2"];
-            echo "<br>";
-            $vetor[5] = 10;
-            echo "Posição 5:".$vetor[5];
-            unset($vetor[5]);
-            //unset($vetor);
+        <br>
 
-            foreach($vetor as $posicao){
-                echo "<br> Valores do Vetor: $posicao";
-            }
-
-            foreach($vetor as $chave => $valor){
-                echo "<br> Posição $chave tem o valor $valor";
-            }
-            
-        ?>
+        <div class="row">
+            <div  class="col"> 
+                <button type="submit" class="btn btn-danger">Enviar</button>
+            </div>
+        </div>
+    </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
