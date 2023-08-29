@@ -22,9 +22,10 @@
             }
 
         }
-    echo "Quantidade de números positivos: $positivos\n";
-    echo "Quantidade de números negativos: $negativos\n";
-    echo "Quantidade de números pares: $pares\n";
-    echo "Quantidade de números ímpares: $impares\n";
+        
+        echo "Quantidade de números positivos: $positivos\n";
+        echo "Quantidade de números negativos: $negativos\n";
+        echo "Quantidade de números pares: $pares\n";
+        echo "Quantidade de números ímpares: $impares\n";
 
 ?>
