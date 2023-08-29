@@ -15,11 +15,13 @@
         <div class="row">
             <div class="col">
                 <label for="numero">Digite um número de 1 a 12:</label>
-                <input type="number" name="numero" min="1" max="12" required><br>
+                <input type="number" name="numero">
             </div>
         </div>
+      </div>
 
         <br>
+
         <div class="row">
             <div class="col">
             <button type="submit" class="btn btn-warning">Ver nome do mês</button>
