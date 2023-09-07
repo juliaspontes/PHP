@@ -9,15 +9,20 @@
   <body class="container">
     <br>
 
-    <form action="Resposta2.php" method="POST">
-      <?php for ($i=1; $i<=10 ;$i++) { ?>
+    <form action="Resposta3.php" method="POST">
         <div class="row">
             <div class="col">
-                <label for="nome<?=$i?>">Digite o nome do aluno <?=$i?></label>
-                <input type="text" id="nome<?=$i?>" name="nome<?=$i?>">
+                <label for="numero1">Digite o primeiro número</label>
+                <input type="text" id="numero1" name="numero1">
             </div>
         </div>
-        <?php } ?>
+        <br>
+        <div class="row">
+            <div class="col">
+                <label for="numero2">Digite o segundo número</label>
+                <input type="text" id="numero2" name="numero2">
+            </div>
+        </div>
         <br>
         <div class="row">
             <div class="col">
