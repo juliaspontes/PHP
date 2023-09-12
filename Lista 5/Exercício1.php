@@ -7,7 +7,7 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-<form method="POST" enctype="multipart/form-data" action="arquivo.php">
+<form method="POST" enctype="multipart/form-data" action="Resposta1.php">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -16,7 +16,7 @@
                         <h2 class="text-center">Cadastro</h2>
                     </div>
                     <div class="card-body">
-                        <form method="POST" enctype="multipart/form-data" action="envio.php">
+                        <form method="POST" enctype="multipart/form-data" action="Resposta1.php">
                             
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome</label>
@@ -120,7 +120,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <label for="arquivo" class="form-label">
-                                            Selecione o arquivo:
+                                            Encaminhe sua foto:
                                         </label>
                                         <input type="file" class="form-control" name="arquivo"
                                         id="arquivo"/>
