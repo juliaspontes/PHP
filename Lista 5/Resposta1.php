@@ -1,24 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Alunos</title>
 
-  </head>
-  <body class="container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="container">
+    
     <?php
+    $texto = fopen("arquivo.txt", "w") or die("Erro");
+    fwrite ($texto, $_POST["nome"]. "\n");
+    fwrite ($texto, $_POST["cpf"]. "\n");
+    fwrite ($texto, $_POST["datanascimento"]."\n");
+    fwrite ($texto, $_POST["sexo"]."\n");
+    fwrite ($texto, $_POST["estadocivil"]."\n");
+    fwrite ($texto, $_POST["rendamensal"]."\n");
+    fwrite ($texto, $_POST["logradouro"]."\n");
+    fwrite ($texto, $_POST["numero"]."\n");
+    fwrite ($texto, $_POST["complemento"]."\n");
+    fwrite ($texto, $_POST["estado"]."\n");
+    fwrite ($texto, $_POST["cidade"]."\n");
+    fclose($texto);
+    readfile("arquivo.txt");
+
+    $nome_arquivo = basename($_FILES["arquivo"]["name"]);
+    if (file_exists($nome_arquivo)){
+        echo "O arquivo ja foi criado!";
+        die();
+    }
+    $resultado = move_uploaded_file($_FILES["arquivo"]["tmp_name"], $nome_arquivo);
+    if($resultado){
+        echo "<a href ='$nome_arquivo'> Baixar Arquivo </a>";
+    }
+    else{
+        echo"Erro ao salvar arquivo";
+    }
+
+    if($_FILES["arquivo"] ["size"] > 500000){
+        echo "Desculpe, o arquivo é muito grande";
+        die();
+    }
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif"){
+        echo"Desculpe, somente JPG, PNG, & GIF arquivo sao permitidos!";
+        die();
+    }
+    if(move_uploaded_file($_FILES["arquivo"] ["temp_name"], $target_file)){
+        echo "O arquivo ".htmlspecialchars(basename($_FILES["arquivo"]["name"]))."foi carregado";
+    }else{
+        echo"Desculpe, erro ao subir arquivo!";
+    }
 
 
-        $texto= fopen("arquivo.txt", "w") or die ("Erro!");
-          fwrite($texto, $_POST["nome.$i"]."\n");
-          fwrite($texto, $_POST["cpf.$i"]."\n");
-          fclose($texto);
-          readfile("arquivo.txt");
-        ?>
-        
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    ?>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

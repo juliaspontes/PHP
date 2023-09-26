@@ -20,19 +20,19 @@
                             
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                                <input type="text" class="form-control" id="nome" name="nome"  placeholder="Seu Nome">
                             </div>
 
                             
                             <div class="mb-3">
                                 <label for="cpf" class="form-label">CPF</label>
-                                <input type="text" class="form-control" id="cpf" placeholder="Seu CPF">
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Seu CPF">
                             </div>
 
                             
                             <div class="mb-3">
-                                <label for="data-nascimento" class="form-label">Data de Nascimento</label>
-                                <input type="date" class="form-control" id="data-nascimento">
+                                <label for="datanascimento" class="form-label">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="datanascimento" name="datanascimento">
                             </div>
 
                             
@@ -53,7 +53,7 @@
                             
                             <div class="mb-3">
                                 <label for="estado-civil" class="form-label">Estado Civil</label>
-                                <select class="form-select" id="estado-civil">
+                                <select class="form-select" id="estado-civil" name="estadocivil">
                                     <option value="solteiro">Solteiro</option>
                                     <option value="casado">Casado</option>
                                     <option value="divorciado">Divorciado</option>
@@ -64,26 +64,26 @@
                             
                             <div class="mb-3">
                                 <label for="renda-mensal" class="form-label">Renda Mensal</label>
-                                <input type="number" class="form-control" id="renda-mensal" placeholder="Sua Renda Mensal">
+                                <input type="number" class="form-control" id="renda-mensal" name="rendamensal" placeholder="Sua Renda Mensal">
                             </div>
 
                             
                             <h3 class="mb-3">Endereço</h3>
                             <div class="mb-3">
                                 <label for="logradouro" class="form-label">Logradouro</label>
-                                <input type="text" class="form-control" id="logradouro" placeholder="Seu Logradouro">
+                                <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Seu Logradouro">
                             </div>
                             <div class="mb-3">
                                 <label for="numero" class="form-label">Número</label>
-                                <input type="text" class="form-control" id="numero" placeholder="Número">
+                                <input type="text" class="form-control" id="numero" name="numero" placeholder="Número">
                             </div>
                             <div class="mb-3">
                                 <label for="complemento" class="form-label">Complemento</label>
-                                <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+                                <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
                             </div>
                             <div class="mb-3">
                                 <label for="estado" class="form-label">Estado</label>
-                                <select class="form-select" id="estado">
+                                <select class="form-select" id="estado" name="estado">
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AP">Amapá</option>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="cidade" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+                                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Sua Cidade">
                             </div>
                                 <div class="row">
                                     <div class="col">
